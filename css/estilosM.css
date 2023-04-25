@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root{
+    --padding-container: 100px 0;
+    --color-tittle: #fff;
+}
+
+ body{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 9px 1px 10px rgba(0, 0, 0, 0,3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+.abajo{
+    text-align: left;
+}
+.subtittle{
+    text-align: left;
+}
+
+.goku{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+.goku::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(180deg, #4c08eb8c 0%, rgba(59, 57, 57, 0.589) 100%);
+    background-size: cover;
+    z-index: -1;
+}
+/* Nav */
+.nav__conteiner{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav__tittle{
+    font-weight: 300;
+}
+
+.nav__items{
+    list-style: none;
+}
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.nav__img{
+    display: block;
+    width: 30px;
+     
+}
+.nav__close{
+    display: var(--show, none);
+}
+.imglogo{
+    width: 250px;
+    height: 80px;
+    margin-top: 1em;
+    margin-left: 30px;
+}
